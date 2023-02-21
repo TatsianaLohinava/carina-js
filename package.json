@@ -1,0 +1,15 @@
+{
+    "name": "carina-test",
+    "version": "1.0.0",
+    "author": "Tatsiana Lohinava",
+    "scripts": {
+        "test": "mocha"
+    },
+    "devDependencies": {
+        "axios": "^1.3.3",
+        "chai": "^4.3.7",
+        "chai-json-schema": "^1.5.1",
+        "chai-json-schema-ajv": "^5.2.4",
+        "mocha": "^10.2.0"
+    }
+}
