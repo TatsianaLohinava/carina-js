@@ -48,7 +48,8 @@ describe('API Tests', () => {
 
 
     it('delete user', async () => {
-        let deleteResponse = await axios.delete('/users/10', {data: { "id": 10 }})
+        let userId = 10;
+        let deleteResponse = await axios.delete(`/users/${userId}`, { data: { "id": userId } })
             .then((response) => response);
         assert.strictEqual(deleteResponse.status, 200);
         chai.expect(deleteResponse.data).to.be.validJsonSchema;
